@@ -1,19 +1,18 @@
-import { fade } from "@material-ui/core/styles";
-
 import { makeStyles } from "../theme";
 
 const useStyles = makeStyles(
   (theme) => ({
     tabRoot: {
+      color: theme.palette.saleor.main[1],
+
       "@media (min-width: 600px)": {
         minWidth: "unset",
       },
       "&.Mui-selected": {
-        background: theme.palette.secondary.main,
-        color: theme.palette.primary.main,
+        background: theme.palette.saleor.main[6],
       },
       "&:hover": {
-        background: fade(theme.palette.secondary.main, 0.6),
+        color: theme.palette.saleor.main[3],
       },
       borderRadius: 8,
       minHeight: 40,
